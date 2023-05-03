@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Youssef Mohamed</h1>
-<h3 align="center">Student at Faculty of Computers and Artificial Intelligence, Cairo university. Software engineering student at Alx.</h3>
+<h3 align="center">Student at Faculty of Computers and Artificial Intelligence, Cairo university.</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
