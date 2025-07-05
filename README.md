@@ -10,10 +10,6 @@
 
 ###
 
-<img align="right" height="100" src="https://files.catbox.moe/79icn3.gif"  />
-
-###
-
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img width="12" />
@@ -42,6 +38,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
+  <img align="right" height="100" src="https://files.catbox.moe/79icn3.gif" alt="cat gif" />
 </div>
 
 ###
