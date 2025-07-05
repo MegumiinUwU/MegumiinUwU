@@ -1,9 +1,6 @@
 <h1 align="center">Hi 👋, I'm Youssef Mohamed</h1>
 <h3 align="center">Student at Faculty of Computers and Artificial Intelligence, Cairo university.</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=megumiinuwu&label=Profile%20views&color=0e75b6&style=flat" alt="megumiinuwu" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=megumiinuwu" alt="megumiinuwu" /></a> </p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
