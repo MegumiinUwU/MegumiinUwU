@@ -1,11 +1,16 @@
 <h1 align="center">Hi 👋, I'm Youssef Mohamed</h1>
 <h3 align="center">Student at Faculty of Computers and Artificial Intelligence, Cairo university.</h3>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=megumiinuwu&label=Profile%20views&color=0e75b6&style=flat" alt="megumiinuwu" /> </p>
+
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=megumiinuwu" alt="megumiinuwu" /></a> </p>
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/youssef-mohamed-7808a1258" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="youssef-mohamed-7808a1258" height="30" width="40" /></a>
-<a href="https://fb.com/https://www.facebook.com/profile.php?id=100085001084030" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/profile.php?id=100085001084030" height="30" width="40" /></a>
-<a href="https://codeforces.com/profile/megumiinuwu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="megumiinuwu" height="30" width="40" /></a>
+<a href="https://medium.com/@megumiinuwu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@megumiinuwu" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/megumiinuwu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="megumiinuwu" height="30" width="40" /></a>
+<a href="https://discord.gg/megumiinuwu" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="megumiinuwu" height="30" width="40" /></a>
 </p>
 
 
