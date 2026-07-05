@@ -82,13 +82,18 @@
 
 <div align="center">
   <a href="https://github.com/Auto-Pipeline-AI" target="blank">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Auto-Pipeline-AI&theme=radical" alt="Auto-Pipeline-AI" width="90%" />
+    <img src="https://github.com/Auto-Pipeline-AI.png" alt="Auto-Pipeline-AI logo" width="110" height="110" style="border-radius:50%" />
   </a>
-  <br/><br/>
-  <a href="https://github.com/Auto-Pipeline-AI" target="blank">
-    <img src="https://img.shields.io/badge/Auto--Pipeline--AI-Visit%20the%20Org-6f42c1?style=for-the-badge&logo=github&logoColor=white" alt="Auto-Pipeline-AI" />
-  </a>
+
+  <h3><a href="https://github.com/Auto-Pipeline-AI">Auto-Pipeline-AI</a></h3>
   <p><em>An AI organization I proudly admin and contribute to — building automated ML pipelines.</em></p>
+
+  <a href="https://github.com/Auto-Pipeline-AI/AutoPipeline"><img src="https://img.shields.io/badge/AutoPipeline-6f42c1?style=for-the-badge&logo=github&logoColor=white" alt="AutoPipeline" /></a>
+  <a href="https://github.com/Auto-Pipeline-AI/agent"><img src="https://img.shields.io/badge/Agent-1f6feb?style=for-the-badge&logo=github&logoColor=white" alt="Agent" /></a>
+  <a href="https://github.com/Auto-Pipeline-AI/backend"><img src="https://img.shields.io/badge/Backend-238636?style=for-the-badge&logo=github&logoColor=white" alt="Backend" /></a>
+  <a href="https://github.com/Auto-Pipeline-AI/frontend"><img src="https://img.shields.io/badge/Frontend-db61a2?style=for-the-badge&logo=github&logoColor=white" alt="Frontend" /></a>
+  <br/><br/>
+  <a href="https://github.com/Auto-Pipeline-AI"><img src="https://img.shields.io/badge/Visit%20the%20Org-24292e?style=for-the-badge&logo=github&logoColor=white" alt="Visit the org" /></a>
 </div>
 
 ---
