@@ -60,7 +60,7 @@
 
 <div align="center">
   <img src="metrics/languages.svg" alt="most used languages" width="46%" />
-  <img src="metrics/habits.svg" alt="coding habits" width="46%" />
+  <img src="metrics/contributions.svg" alt="contributions and follow-up" width="46%" />
 </div>
 
 <div align="center">
