@@ -2,8 +2,12 @@ name: Profile metrics
 
 # Generates static SVG stat cards and commits them to the repo, so the
 # profile README never depends on a rate-limited third-party service.
-# Requires a repo secret METRICS_TOKEN (classic PAT, no scopes needed for
-# public data; add read:org for organization metrics).
+# Requires a repo secret METRICS_TOKEN (classic PAT with repo + read:org
+# scopes so organization and private contributions are counted).
+#
+# Radical-style skin shared by every card: dark gradient background,
+# neon-pink glowing headers, cyan text, yellow icons, and the GitHub
+# green contribution palette remapped to a pink ramp.
 
 on:
   schedule:
@@ -17,6 +21,22 @@ concurrency:
   group: profile-metrics
   cancel-in-progress: true
 
+env:
+  RADICAL_CSS: |
+    svg { background: linear-gradient(135deg, #141321 0%, #1d1233 55%, #141321 100%); border-radius: 14px; }
+    * { color: #a9fef7 !important; }
+    h1, h1 * { color: #fe428e !important; font-size: 24px !important; text-shadow: 0 0 12px rgba(254, 66, 142, 0.55); }
+    h2, h2 * { color: #fe428e !important; font-size: 15px !important; text-transform: uppercase; letter-spacing: 2.5px; text-shadow: 0 0 10px rgba(254, 66, 142, 0.5); }
+    .field { font-size: 14px; }
+    .field svg { color: #f8d847 !important; }
+    h1 svg, h2 svg { color: #fe428e !important; }
+    footer { display: none !important; }
+    [fill="#ebedf0"] { fill: #201c34; }
+    [fill="#9be9a8"] { fill: #6d2a52; }
+    [fill="#40c463"] { fill: #a03374; }
+    [fill="#30a14e"] { fill: #d43f96; }
+    [fill="#216e39"] { fill: #ff58b0; }
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
@@ -29,15 +49,13 @@ jobs:
           filename: metrics/general.svg
           committer_message: "chore: update profile metrics"
           template: classic
-          base: header, activity, community, repositories
+          base: header, activity, repositories
           repositories_affiliations: owner, collaborator, organization_member
           config_display: large
           config_timezone: Africa/Cairo
-          extras_css: |
-            svg { background: #141321; border-radius: 10px; }
-            * { color: #a9fef7 !important; }
-            h1, h2, h1 *, h2 * { color: #fe428e !important; }
-            footer, footer * { color: #6f6f8d !important; }
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+          extras_css: ${{ env.RADICAL_CSS }}
 
       - name: Most used languages
         uses: lowlighter/metrics@latest
@@ -53,16 +71,11 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_details: percentage
           plugin_languages_sections: most-used
-          extras_css: |
-            svg { background: #141321; border-radius: 10px; }
-            * { color: #a9fef7 !important; }
-            h1, h2, h1 *, h2 * { color: #fe428e !important; }
-            footer, footer * { color: #6f6f8d !important; }
+          extras_css: ${{ env.RADICAL_CSS }}
 
-      # The habits plugin is broken upstream: GitHub's events API no longer
-      # includes commit payloads, and lowlighter/metrics is unmaintained.
-      # This card shows issue/PR follow-up stats and notable contributions
-      # (orgs and repos contributed to) instead.
+      # The habits plugin is broken upstream (GitHub's events API no longer
+      # includes commit payloads), so this card shows issue/PR stats and
+      # notable contributions (orgs and repos contributed to) instead.
       - name: Contributions
         uses: lowlighter/metrics@latest
         with:
@@ -74,14 +87,10 @@ jobs:
           base: ""
           config_timezone: Africa/Cairo
           plugin_followup: yes
-          plugin_followup_sections: repositories, user
+          plugin_followup_sections: user
           plugin_notable: yes
           plugin_notable_from: all
-          extras_css: |
-            svg { background: #141321; border-radius: 10px; }
-            * { color: #a9fef7 !important; }
-            h1, h2, h1 *, h2 * { color: #fe428e !important; }
-            footer, footer * { color: #6f6f8d !important; }
+          extras_css: ${{ env.RADICAL_CSS }}
 
       - name: Isometric contribution calendar
         uses: lowlighter/metrics@latest
@@ -96,8 +105,4 @@ jobs:
           config_timezone: Africa/Cairo
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          extras_css: |
-            svg { background: #141321; border-radius: 10px; }
-            * { color: #a9fef7 !important; }
-            h1, h2, h1 *, h2 * { color: #fe428e !important; }
-            footer, footer * { color: #6f6f8d !important; }
+          extras_css: ${{ env.RADICAL_CSS }}
