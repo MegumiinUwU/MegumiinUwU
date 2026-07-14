@@ -1,12 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="630" class="large">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="629" class="large">
     <defs>
         <style/>
     </defs>
     <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}svg.calendar{margin-left:13px;margin-top:4px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}#metrics-end{width:100%}</style>
-    <style>svg { background: #141321; border-radius: 10px; }
+    <style>svg { background: linear-gradient(135deg, #141321 0%, #1d1233 55%, #141321 100%); border-radius: 14px; }
 * { color: #a9fef7 !important; }
-h1, h2, h1 *, h2 ARCHITECTURE.md CODE_OF_CONDUCT.md CONTRIBUTING.md Dockerfile LICENSE README.md SECURITY.md action.yml package-lock.json package.json settings.example.json source tests vercel.json { color: #fe428e !important; }
-footer, footer ARCHITECTURE.md CODE_OF_CONDUCT.md CONTRIBUTING.md Dockerfile LICENSE README.md SECURITY.md action.yml package-lock.json package.json settings.example.json source tests vercel.json { color: #6f6f8d !important; }</style>
+h1, h1 ARCHITECTURE.md CODE_OF_CONDUCT.md CONTRIBUTING.md Dockerfile LICENSE README.md SECURITY.md action.yml package-lock.json package.json settings.example.json source tests vercel.json { color: #fe428e !important; font-size: 24px !important; text-shadow: 0 0 12px rgba(254, 66, 142, 0.55); }
+h2, h2 ARCHITECTURE.md CODE_OF_CONDUCT.md CONTRIBUTING.md Dockerfile LICENSE README.md SECURITY.md action.yml package-lock.json package.json settings.example.json source tests vercel.json { color: #fe428e !important; font-size: 15px !important; text-transform: uppercase; letter-spacing: 2.5px; text-shadow: 0 0 10px rgba(254, 66, 142, 0.5); }
+.field { font-size: 14px; }
+.field svg { color: #f8d847 !important; }
+h1 svg, h2 svg { color: #fe428e !important; }
+footer { display: none !important; }
+[fill="#ebedf0"] { fill: #201c34; }
+[fill="#9be9a8"] { fill: #6d2a52; }
+[fill="#40c463"] { fill: #a03374; }
+[fill="#30a14e"] { fill: #d43f96; }
+[fill="#216e39"] { fill: #ff58b0; }</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
             <section>
