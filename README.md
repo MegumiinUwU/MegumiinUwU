@@ -55,17 +55,16 @@
 ### GitHub Stats
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MegumiinUwU&theme=radical" alt="profile details" width="90%" />
+  <img src="metrics/general.svg" alt="general stats" width="94%" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MegumiinUwU&theme=radical" alt="stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MegumiinUwU&theme=radical" alt="languages" />
+  <img src="metrics/languages.svg" alt="most used languages" width="46%" />
+  <img src="metrics/habits.svg" alt="coding habits" width="46%" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=MegumiinUwU&theme=radical" alt="most commit language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MegumiinUwU&theme=radical&utcOffset=2" alt="productive time" />
+  <img src="metrics/isocalendar.svg" alt="isometric contribution calendar" width="94%" />
 </div>
 
 <div align="center">
