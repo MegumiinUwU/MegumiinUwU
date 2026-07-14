@@ -21,15 +21,17 @@ concurrency:
   group: profile-metrics
   cancel-in-progress: true
 
+# Note: the metrics action passes extras_css through a shell, so a bare
+# asterisk gets glob-expanded into filenames. Only glob-safe selectors here.
 env:
   RADICAL_CSS: |
-    svg { background: linear-gradient(135deg, #141321 0%, #1d1233 55%, #141321 100%); border-radius: 14px; }
-    * { color: #a9fef7 !important; }
-    h1, h1 * { color: #fe428e !important; font-size: 24px !important; text-shadow: 0 0 12px rgba(254, 66, 142, 0.55); }
-    h2, h2 * { color: #fe428e !important; font-size: 15px !important; text-transform: uppercase; letter-spacing: 2.5px; text-shadow: 0 0 10px rgba(254, 66, 142, 0.5); }
+    svg { background: linear-gradient(135deg, #141321 0%, #1d1233 55%, #141321 100%); border-radius: 14px; color: #a9fef7 !important; }
+    h1 { color: #fe428e !important; font-size: 24px !important; text-shadow: 0 0 12px rgba(254, 66, 142, 0.55); }
+    h2 { color: #fe428e !important; font-size: 15px !important; text-transform: uppercase; letter-spacing: 2.5px; text-shadow: 0 0 10px rgba(254, 66, 142, 0.5); }
+    h3 { color: #f8d847 !important; }
     .field { font-size: 14px; }
-    .field svg { color: #f8d847 !important; }
-    h1 svg, h2 svg { color: #fe428e !important; }
+    .field svg { color: #f8d847 !important; fill: #f8d847 !important; }
+    h1 svg, h2 svg { color: #fe428e !important; fill: #fe428e !important; }
     footer { display: none !important; }
     [fill="#ebedf0"] { fill: #201c34; }
     [fill="#9be9a8"] { fill: #6d2a52; }
@@ -49,8 +51,10 @@ jobs:
           filename: metrics/general.svg
           committer_message: "chore: update profile metrics"
           template: classic
+          # repositories_affiliations with org repos zeroes out the
+          # stargazers/license/release aggregation, so stick to owned repos;
+          # org work still counts in the commit/PR numbers above.
           base: header, activity, repositories
-          repositories_affiliations: owner, collaborator, organization_member
           config_display: large
           config_timezone: Africa/Cairo
           plugin_calendar: yes
