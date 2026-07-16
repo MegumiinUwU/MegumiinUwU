@@ -1,0 +1,35 @@
+name: Profile summary cards
+
+# Runs the same open-source generator that powers
+# github-profile-summary-cards.vercel.app, but inside this repo with our
+# own token — identical cards, no shared rate limit. The SVGs are
+# committed to profile-summary-card-output/radical/ and the README embeds
+# them as plain images.
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # daily, 05:00 Cairo time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-summary-cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Classic PAT with repo + read:org so org and private work counts
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        with:
+          USERNAME: MegumiinUwU
+          BRANCH_NAME: "main"
+          UTC_OFFSET: 2
+          THEME: "radical"
+          AUTO_PUSH: true

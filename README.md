@@ -55,24 +55,25 @@
 ### GitHub Stats
 
 <div align="center">
-  <img src="metrics/general.svg" alt="general stats" width="94%" />
+  <img src="profile-summary-card-output/radical/0-profile-details.svg" alt="profile details" width="90%" />
 </div>
 
 <div align="center">
-  <img src="metrics/languages.svg" alt="most used languages" width="46%" />
-  <img src="metrics/contributions.svg" alt="contributions and follow-up" width="46%" />
+  <img src="profile-summary-card-output/radical/3-stats.svg" alt="stats" />
+  <img src="profile-summary-card-output/radical/1-repos-per-language.svg" alt="languages" />
 </div>
 
 <div align="center">
-  <img src="metrics/isocalendar.svg" alt="isometric contribution calendar" width="94%" />
+  <img src="profile-summary-card-output/radical/2-most-commit-language.svg" alt="most commit language" />
+  <img src="profile-summary-card-output/radical/4-productive-time.svg" alt="productive time" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=MegumiinUwU&mode=daily&background=141321&ring=fe428e&fire=f8d847&currStreakNum=fe428e&currStreakLabel=f8d847&sideNums=a9fef7&sideLabels=fe428e&dates=6f6f8d&stroke=2a2640&hide_border=true&border_radius=14" alt="streak graph" />
+  <img src="https://streak-stats.demolab.com?user=MegumiinUwU&mode=daily&theme=radical&hide_border=true&border_radius=5" alt="streak graph" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MegumiinUwU&bg_color=141321&color=a9fef7&line=fe428e&point=f8d847&area=true&area_color=fe428e&hide_border=true&radius=16" alt="activity graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MegumiinUwU&radius=16&theme=radical&area=true&hide_border=true" alt="activity graph" />
 </div>
 
 ---
