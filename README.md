@@ -69,11 +69,11 @@
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=MegumiinUwU&mode=daily&theme=radical&hide_border=true&border_radius=5" alt="streak graph" />
+  <img src="graphs/streak.svg" alt="streak graph" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MegumiinUwU&radius=16&theme=radical&area=true&hide_border=true" alt="activity graph" />
+  <img src="graphs/activity-graph.svg" alt="activity graph" />
 </div>
 
 ---

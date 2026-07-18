@@ -1,10 +1,12 @@
 name: Profile summary cards
 
-# Runs the same open-source generator that powers
-# github-profile-summary-cards.vercel.app, but inside this repo with our
-# own token — identical cards, no shared rate limit. The SVGs are
-# committed to profile-summary-card-output/radical/ and the README embeds
-# them as plain images.
+# Generates every stats image in the README inside this repo, using the
+# same open-source projects that power the public hosted endpoints
+# (github-profile-summary-cards.vercel.app, streak-stats.demolab.com,
+# github-readme-activity-graph.vercel.app) — identical cards, our own
+# token, no shared rate limits or third-party downtime. Outputs are
+# committed to profile-summary-card-output/ and graphs/ and the README
+# embeds them as plain images.
 
 on:
   schedule:
@@ -33,3 +35,44 @@ jobs:
           UTC_OFFSET: 2
           THEME: "radical"
           AUTO_PUSH: true
+
+      # Same generator as streak-stats.demolab.com, run via the project's
+      # official action mode with the same URL options as before.
+      - name: Streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=MegumiinUwU&mode=daily&theme=radical&hide_border=true&border_radius=5
+          path: graphs/streak.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+      # github-readme-activity-graph has no action mode, so build and run
+      # its actual source on the runner and capture the SVG it serves.
+      - name: Activity graph
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          git clone --depth=1 https://github.com/Ashutosh00710/github-readme-activity-graph.git /tmp/activity-graph
+          cd /tmp/activity-graph
+          npm ci
+          npm run build
+          npm start &
+          SERVER_PID=$!
+          mkdir -p "$GITHUB_WORKSPACE/graphs"
+          for i in $(seq 1 30); do
+            sleep 2
+            if curl -sf "http://localhost:5100/graph?username=MegumiinUwU&radius=16&theme=radical&area=true&hide_border=true" -o "$GITHUB_WORKSPACE/graphs/activity-graph.svg"; then
+              break
+            fi
+          done
+          kill $SERVER_PID 2>/dev/null || true
+          grep -q "<svg" "$GITHUB_WORKSPACE/graphs/activity-graph.svg"
+
+      - name: Commit graphs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add graphs
+          git diff --cached --quiet && echo "no graph changes" && exit 0
+          git commit -m "Generate streak and activity graphs"
+          git pull --rebase origin main
+          git push
