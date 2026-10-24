@@ -24,7 +24,7 @@ jobs:
   cards:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           # Classic PAT with repo + read:org so org and private work counts
@@ -44,6 +44,13 @@ jobs:
           options: user=MegumiinUwU&mode=daily&theme=radical&hide_border=true&border_radius=5
           path: graphs/streak.svg
           token: ${{ secrets.METRICS_TOKEN }}
+
+      # Pin Node 22 (npm 10): the ubuntu-26.04 runner's newer npm rejects
+      # the upstream package-lock.json in `npm ci` (missing optional
+      # @unrs/resolver-binding-* entries), which npm 10 accepts.
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
 
       # github-readme-activity-graph has no action mode, so build and run
       # its actual source on the runner and capture the SVG it serves.
