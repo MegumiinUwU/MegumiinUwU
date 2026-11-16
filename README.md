@@ -6,12 +6,7 @@
   <img src="https://komarev.com/ghpvc/?username=MegumiinUwU&label=Profile%20views&color=6f42c1&style=flat" alt="profile views" />
 </p>
 
-<p align="center">
-  <a href="https://linkedin.com/in/youssef-mohamed-7808a1258" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://medium.com/@megumiinuwu" target="blank"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
-  <a href="https://www.leetcode.com/megumiinuwu" target="blank"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
-  <a href="https://discord.gg/megumiinuwu" target="blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-</p>
+
 
 ---
 
